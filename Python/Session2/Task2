@@ -1,0 +1,11 @@
+import json
+from pprintpp import pprint 
+from urllib.request import urlopen
+
+url = "http://ipinfo.io/json"
+
+response = urlopen(url)
+
+data = json.load(response)
+
+pprint(data)
