@@ -68,4 +68,40 @@ int main(){
     }
     return res;
 }
+int main(){
+    std::string str;
+    std::cout<<"Enter The numbers do you want sum it : ";
+    std::cin >> str;
+
+    std::cout << "The result is : " << sum(str) << std::endl;
+} */
+
+// Task 6
+
+/* int main(){
+    int x;
+    std::cout << "Enter Your Number : ";
+    std::cin >> x;
+
+    for(int i = 1 ; i <= 10; i++){
+        std::cout << i << " * " << x << " = " << i*x << std::endl; 
+    }
+} */
+
+int main(){
+    int number_dec;
+    std::string number_bin;
+
+    std::cout << "Enter The Number Of Decimal : ";
+    std::cin >> number_dec;
+    std::bitset<8>number_bit(number_dec);
+    std::cout << "Ther Binary of the " << number_dec << " is : " << number_bit;
+    std::cout << "\n=================================\n";
+    std::cout << "Enter The Number Of binary : ";
+    std::cin >> number_bin;
+
+    std::bitset<8>string_dec(number_bin);
+
+    std::cout << "Ther Decimal of the " << number_dec << " is : " << number_bit << std::endl;
+}
 
