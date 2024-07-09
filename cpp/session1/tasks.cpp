@@ -42,4 +42,30 @@ int main(){
 
     std::cout << "The answer is " << c << std::endl;
 } */
+/* // Task4 
+int main(){
+    char ch;
+    std::cout << "Enter the charachter : ";
+    std::cin >> ch;
+    ch = std::tolower(ch);
+
+    bool chick = (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u');
+
+    if(chick){
+        std::cout << "YES\n";
+    }
+    else{
+        std::cout << "NO\n";
+    }
+} */
+
+// Task5
+
+/* int sum(std::string str){
+    int res = 0;
+    for(char s : str){
+        res += s - '0';
+    }
+    return res;
+}
 
